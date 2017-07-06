@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>JUST JANAY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+          var mouseX, mouseY;
+          var ww = $( window ).width();
+          var wh = $( window ).height();
+          var traX, traY;
+          $(document).mousemove(function(e){
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+            traX = ((4 * mouseX) / 570) + 40;
+            traY = ((4 * mouseY) / 570) + 50;
+            console.log(traX);
+            $(".title").css({"background-position": traX + "%" + traY + "%"});
+          });
+        });
+    </script>
+    <script src="https://use.fontawesome.com/1976565890.js"></script>
+  </head>
+  <body>
+
+    <!-- Nav Begin -->
+      <nav>
+        <ul class="nav-words">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In  </a></li>
+        </ul>
+      </nav>
+
+
+    <!-- blog begin -->
+    <div class="container">
+      <div class="title">JUST JANAY</div>
+      <div class="subtitle"> Creator + Innovator + Visionary </div>
+    </div>
+
+<!--
+    <div class="blog-container">
+      <article class="blog">
+          <header>
+            <h2>Blog title</h2>
+          </header>
+          <section class="blog-review">
+            by: <a href="#">JD Smith</a>
+          </section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...<a href="#">Read More</a></p>
+      </article>
+    </div>
+    <div class="blog-container">
+      <article class="blog">
+          <header>
+            <h2>Blog title</h2>
+          </header>
+          <section class="blog-review">
+            by: <a href="#">JD Smith</a>
+          </section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...<a href="#">Read More</a></p>
+      </article>
+    </div>
+    <div class="blog-container">
+      <article class="blog">
+          <header>
+            <h2>Blog title</h2>
+          </header>
+          <section class="main_review">
+            by: <a href="#">JD Smith</a>
+          </section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...<a href="#">Read More</a></p>
+      </article>
+    </div>
+  -->
+  <footer class="footer-container">
+    <div class="fav-cons">
+      <link rel="shortcut icon" href=".ico">
+    </div>
+  </footer>
+  </body>
+</html>
