@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+          var mouseX, mouseY;
+          var ww = $( window ).width();
+          var wh = $( window ).height();
+          var traX, traY;
+          $(document).mousemove(function(e){
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+            traX = ((4 * mouseX) / 570) + 40;
+            traY = ((4 * mouseY) / 570) + 50;
+            console.log(traX);
+            $(".title").css({"background-position": traX + "%" + traY + "%"});
+          });
+        });
+    </script>
+    <script src="https://use.fontawesome.com/1976565890.js"></script>
+  </head>
+  <body>
+
+    <!-- Nav Begin -->
+      <nav>
+        <ul class="nav-words">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+
+
+    <!-- blog begin -->
+    <div class="container">
+      <div class="title">ABOUT</div>
+      <div class="subtitle"> Creator + Innovator + Visionary </div>
+    </div>
+
+  <footer class="footer-container">
+    <div class="fav-cons">
+      <link rel="shortcut icon" href=".ico">
+    </div>
+  </footer>
+  </body>
+</html>
