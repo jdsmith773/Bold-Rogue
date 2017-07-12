@@ -86,8 +86,9 @@ input{
   margin: auto;
   width: 400px;
 }
-.button{
-  text-align: center;
+p {
   border: 1px solid #333;
   padding: 10px;
+  text-decoration: none;
+  text-align: center;
 }
